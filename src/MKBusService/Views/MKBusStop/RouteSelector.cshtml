@@ -1,0 +1,7 @@
+@model IEnumerable<MKBusService.Models.RouteStop>
+@using Microsoft.AspNetCore.Http;
+@{
+    ViewData["Title"] = $"Routes using the stop: {Context.Request.Query["busStopNumber"]} - " +
+        $"{Context.Request.Query["location"]}";
+}
+<h2>@ViewData["Title"]</h2>
