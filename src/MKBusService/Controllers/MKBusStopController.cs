@@ -40,12 +40,13 @@ namespace MKBusService.Controllers
                 return RedirectToAction("Index");
             }
 
-            var routes = _context.RouteStop;
+            var busServiceContext = _context.RouteStop
+                .Where(z=>z.BusStopNumber == busStopNumber).Include(r=>r.BusRouteCodeNavigation);
 
-            if (routes.Any())
+            if (busServiceContext.Any())
             {
                 ViewBag.busStopNumber = busStopNumber;
-                return View(await routes.ToListAsync());
+                return View(await busServiceContext.ToListAsync());
             }
             else
             {

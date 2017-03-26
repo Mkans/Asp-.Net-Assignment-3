@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using MKBusService.Models;
+using Microsoft.AspNetCore.Http;
 
 namespace MKBusService.Controllers
 {
@@ -19,16 +20,32 @@ namespace MKBusService.Controllers
         }
 
         // GET: MKRouteSchedule
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string busRouteCode, string routeName)
         {
-            var busServiceContext = _context.RouteSchedule.Include(r => r.BusRouteCodeNavigation);
-            return View(await busServiceContext.ToListAsync());
+            if (busRouteCode != null)
+            {
+                HttpContext.Session.SetString("BusRouteCode", busRouteCode);
+                HttpContext.Session.SetString("RouteName", routeName);
+            }
+            else if (HttpContext.Session.GetString("BusRouteCode") != null)
+            {
+                busRouteCode = HttpContext.Session.GetString("BusRouteCode");
+                routeName = HttpContext.Session.GetString("RouteName");
+            }
+            else
+            {
+                TempData["message"] = "Please select a bus route to view its stops";
+                return RedirectToAction(actionName: "Index", controllerName: "MKBusRoute");
+            }
+            var routes = _context.RouteSchedule.Where(a => a.BusRouteCode == busRouteCode);
+            return View(await routes.OrderByDescending(r => r.IsWeekDay).ThenBy(r => r.StartTime).ToListAsync());
         }
 
         // GET: MKRouteSchedule/RouteStopsSchedule
-        public async Task<IActionResult> RouteStopsSchedule(int RouteStopId)
+        public async Task<IActionResult> RouteStopSchedule(int RouteStopId)
         {
-            var busServiceContext = _context.RouteSchedule.Include(r => r.BusRouteCodeNavigation);
+             var busRouteCode = HttpContext.Session.GetString("BusRouteCode");
+            var busServiceContext = _context.RouteSchedule.Where(a => a.BusRouteCode == busRouteCode).Include(r => r.BusRouteCodeNavigation);
             return View(await busServiceContext.ToListAsync());
         }
 
