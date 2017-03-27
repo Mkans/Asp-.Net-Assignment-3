@@ -34,7 +34,7 @@
                     @Html.DisplayFor(modelItem => item.BusStopNumber)
                 </td>
                 <td>
-                    <a asp-controller="MKRouteSchedule" asp-action="RouteStopsSchedule" asp-route-RouteStopId="@item.RouteStopId">@item.BusStopNumberNavigation.Location</a>                    
+                    <a asp-controller="MKRouteSchedule" asp-action="RouteStopSchedule" asp-route-RouteStopId="@item.RouteStopId">@item.BusStopNumberNavigation.Location</a>                    
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.OffsetMinutes)
@@ -48,4 +48,4 @@
         }
     </tbody>
 </table>
-<a asp-action="Index" asp-controller="DTRouteStop">Return to Index</a>
+<a asp-action="Index" asp-controller="MKRouteStop">Return to Index</a>

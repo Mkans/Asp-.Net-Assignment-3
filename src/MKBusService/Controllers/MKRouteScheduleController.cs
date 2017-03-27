@@ -42,11 +42,81 @@ namespace MKBusService.Controllers
         }
 
         // GET: MKRouteSchedule/RouteStopsSchedule
-        public async Task<IActionResult> RouteStopSchedule(int RouteStopId)
+        public async Task<IActionResult> RouteStopSchedule(string RouteStopId)
         {
-             var busRouteCode = HttpContext.Session.GetString("BusRouteCode");
+            if (RouteStopId != null)
+            {
+                HttpContext.Session.SetString("RouteStopId", RouteStopId);
+            }
+            else if (HttpContext.Session.GetString("RouteStopId") != null)
+            {
+                RouteStopId = HttpContext.Session.GetString("RouteStopId");
+            }
+            else
+            {
+                TempData["message"] = "Please select a bus route to view its stops";
+                return RedirectToAction(actionName: "Index", controllerName: "MKRouteStop");
+            }
+            int routeNo = int.Parse(RouteStopId);
+            var busRouteCode = HttpContext.Session.GetString("BusRouteCode");
             var busServiceContext = _context.RouteSchedule.Where(a => a.BusRouteCode == busRouteCode).Include(r => r.BusRouteCodeNavigation);
-            return View(await busServiceContext.ToListAsync());
+            var offsetMins = from x in _context.RouteStop
+                             where x.RouteStopId == int.Parse(RouteStopId)
+                             select x.OffsetMinutes;
+            var routes = from x in _context.RouteSchedule
+                         where x.BusRouteCode == busRouteCode
+                         select new RouteSchedule
+                         {
+                             StartTime = x.StartTime.Add(TimeSpan.FromMinutes((double)offsetMins.Single())),
+                             IsWeekDay = x.IsWeekDay
+                         };
+
+            if (routes.Count() == 0)
+            {
+                TempData["message"] = "No schedule records";
+                return RedirectToAction(actionName: "Index", controllerName: "MKRouteStop");
+            }
+            return View(await routes.OrderByDescending(r => r.IsWeekDay).ThenBy(r => r.StartTime).ToListAsync());
+        }
+        public async Task<IActionResult> RouteStopSchedule(string BusRouteCode ,string RouteName)
+        {
+            var routeStopId = (from p in _context.RouteStop
+                              where p.BusRouteCode == BusRouteCode 
+                               select p.RouteStopId).FirstOrDefault();
+            var RouteStopId = routeStopId.ToString();
+            if (RouteStopId != null)
+            {
+                HttpContext.Session.SetString("RouteStopId", RouteStopId);
+            }
+            else if (HttpContext.Session.GetString("RouteStopId") != null)
+            {
+                RouteStopId = HttpContext.Session.GetString("RouteStopId");
+            }
+            else
+            {
+                TempData["message"] = "Please select a bus route to view its stops";
+                return RedirectToAction(actionName: "Index", controllerName: "MKRouteStop");
+            }
+            int routeNo = int.Parse(RouteStopId);
+            var busRouteCode = HttpContext.Session.GetString("BusRouteCode");
+            var busServiceContext = _context.RouteSchedule.Where(a => a.BusRouteCode == busRouteCode).Include(r => r.BusRouteCodeNavigation);
+            var offsetMins = from x in _context.RouteStop
+                             where x.RouteStopId == int.Parse(RouteStopId)
+                             select x.OffsetMinutes;
+            var routes = from x in _context.RouteSchedule
+                         where x.BusRouteCode == busRouteCode
+                         select new RouteSchedule
+                         {
+                             StartTime = x.StartTime.Add(TimeSpan.FromMinutes((double)offsetMins.Single())),
+                             IsWeekDay = x.IsWeekDay
+                         };
+
+            if (routes.Count() == 0)
+            {
+                TempData["message"] = "No schedule records";
+                return RedirectToAction(actionName: "Index", controllerName: "MKRouteStop");
+            }
+            return View(await routes.OrderByDescending(r => r.IsWeekDay).ThenBy(r => r.StartTime).ToListAsync());
         }
 
         // GET: MKRouteSchedule/Details/5

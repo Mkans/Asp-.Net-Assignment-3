@@ -1,10 +1,11 @@
 @model IEnumerable<MKBusService.Models.RouteSchedule>
+@using Microsoft.AspNetCore.Http;
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = $"Stop : {Context.Session.GetString("busRouteCode")} - " +
+        $"{ Context.Session.GetString("routeName")}";
 }
-
-<h2>Index</h2>
+<h2>@ViewData["Title"]</h2>
 
 <p>
     <a asp-action="Create">Create New</a>

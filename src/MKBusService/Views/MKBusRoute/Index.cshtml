@@ -43,8 +43,8 @@ Muthukumar Kandasamy
                 <a asp-action="Edit" asp-route-id="@item.BusRouteCode">Edit</a> |
                 <a asp-action="Details" asp-route-id="@item.BusRouteCode">Details</a> |
                 <a asp-action="Delete" asp-route-id="@item.BusRouteCode">Delete</a> |
-                <a asp-controller="MKRouteSchedule" asp-action="Index" asp-route-BusRouteCode="@item.BusRouteCode"
-                   asp-route-routeName="@item.RouteName">Schedule</a>
+                <a asp-controller="MKRouteSchedule" asp-action="RouteStopSchedule" asp-route-BusRouteCode ="@item.BusRouteCode"
+                   asp-route-routeName ="@item.RouteName">Schedule</a>
             </td>
         </tr>
 }
