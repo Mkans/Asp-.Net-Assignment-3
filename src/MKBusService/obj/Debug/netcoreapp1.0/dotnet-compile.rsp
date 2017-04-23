@@ -1,5 +1,5 @@
---temp-output:D:\CAD\Ms Tech Development\Assignments\Assignment 2\Assignment 1 - Muthukumar Kandasamy - 7723794\MKBusService\src\MKBusService\obj\Debug\netcoreapp1.0\
---out:D:\CAD\Ms Tech Development\Assignments\Assignment 2\Assignment 1 - Muthukumar Kandasamy - 7723794\MKBusService\src\MKBusService\bin\Debug\netcoreapp1.0\MKBusService.dll
+--temp-output:D:\Assignment 4 - Muthukumar Kandasamy - 7723794\src\MKBusService\obj\Debug\netcoreapp1.0\
+--out:D:\Assignment 4 - Muthukumar Kandasamy - 7723794\src\MKBusService\bin\Debug\netcoreapp1.0\MKBusService.dll
 --define:DEBUG
 --define:TRACE
 --define:NETCOREAPP1_0
@@ -224,48 +224,53 @@
 --reference:C:\Users\MK\.nuget\packages\System.Threading.Timer\4.0.1\ref\netstandard1.2\System.Threading.Timer.dll
 --reference:C:\Users\MK\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\MK\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll
---resource:"D:\CAD\Ms Tech Development\Assignments\Assignment 2\Assignment 1 - Muthukumar Kandasamy - 7723794\MKBusService\src\MKBusService\obj\Debug\netcoreapp1.0\MKBusServicedotnet-compile.deps.json",MKBusService.deps.json
-D:\CAD\Ms Tech Development\Assignments\Assignment 2\Assignment 1 - Muthukumar Kandasamy - 7723794\MKBusService\src\MKBusService\Program.cs
-D:\CAD\Ms Tech Development\Assignments\Assignment 2\Assignment 1 - Muthukumar Kandasamy - 7723794\MKBusService\src\MKBusService\Startup.cs
-D:\CAD\Ms Tech Development\Assignments\Assignment 2\Assignment 1 - Muthukumar Kandasamy - 7723794\MKBusService\src\MKBusService\Controllers\AccountController.cs
-D:\CAD\Ms Tech Development\Assignments\Assignment 2\Assignment 1 - Muthukumar Kandasamy - 7723794\MKBusService\src\MKBusService\Controllers\HomeController.cs
-D:\CAD\Ms Tech Development\Assignments\Assignment 2\Assignment 1 - Muthukumar Kandasamy - 7723794\MKBusService\src\MKBusService\Controllers\ManageController.cs
-D:\CAD\Ms Tech Development\Assignments\Assignment 2\Assignment 1 - Muthukumar Kandasamy - 7723794\MKBusService\src\MKBusService\Controllers\MKBusRouteController.cs
-D:\CAD\Ms Tech Development\Assignments\Assignment 2\Assignment 1 - Muthukumar Kandasamy - 7723794\MKBusService\src\MKBusService\Controllers\MKBusStopController.cs
-D:\CAD\Ms Tech Development\Assignments\Assignment 2\Assignment 1 - Muthukumar Kandasamy - 7723794\MKBusService\src\MKBusService\Controllers\MKRouteScheduleController.cs
-D:\CAD\Ms Tech Development\Assignments\Assignment 2\Assignment 1 - Muthukumar Kandasamy - 7723794\MKBusService\src\MKBusService\Controllers\MKRouteStopController.cs
-D:\CAD\Ms Tech Development\Assignments\Assignment 2\Assignment 1 - Muthukumar Kandasamy - 7723794\MKBusService\src\MKBusService\Data\ApplicationDbContext.cs
-D:\CAD\Ms Tech Development\Assignments\Assignment 2\Assignment 1 - Muthukumar Kandasamy - 7723794\MKBusService\src\MKBusService\Data\Migrations\00000000000000_CreateIdentitySchema.cs
-D:\CAD\Ms Tech Development\Assignments\Assignment 2\Assignment 1 - Muthukumar Kandasamy - 7723794\MKBusService\src\MKBusService\Data\Migrations\00000000000000_CreateIdentitySchema.Designer.cs
-D:\CAD\Ms Tech Development\Assignments\Assignment 2\Assignment 1 - Muthukumar Kandasamy - 7723794\MKBusService\src\MKBusService\Data\Migrations\ApplicationDbContextModelSnapshot.cs
-D:\CAD\Ms Tech Development\Assignments\Assignment 2\Assignment 1 - Muthukumar Kandasamy - 7723794\MKBusService\src\MKBusService\Models\ApplicationUser.cs
-D:\CAD\Ms Tech Development\Assignments\Assignment 2\Assignment 1 - Muthukumar Kandasamy - 7723794\MKBusService\src\MKBusService\Models\Bus.cs
-D:\CAD\Ms Tech Development\Assignments\Assignment 2\Assignment 1 - Muthukumar Kandasamy - 7723794\MKBusService\src\MKBusService\Models\BusRoute.cs
-D:\CAD\Ms Tech Development\Assignments\Assignment 2\Assignment 1 - Muthukumar Kandasamy - 7723794\MKBusService\src\MKBusService\Models\BusServiceContext.cs
-D:\CAD\Ms Tech Development\Assignments\Assignment 2\Assignment 1 - Muthukumar Kandasamy - 7723794\MKBusService\src\MKBusService\Models\BusStop.cs
-D:\CAD\Ms Tech Development\Assignments\Assignment 2\Assignment 1 - Muthukumar Kandasamy - 7723794\MKBusService\src\MKBusService\Models\Country.cs
-D:\CAD\Ms Tech Development\Assignments\Assignment 2\Assignment 1 - Muthukumar Kandasamy - 7723794\MKBusService\src\MKBusService\Models\Driver.cs
-D:\CAD\Ms Tech Development\Assignments\Assignment 2\Assignment 1 - Muthukumar Kandasamy - 7723794\MKBusService\src\MKBusService\Models\Province.cs
-D:\CAD\Ms Tech Development\Assignments\Assignment 2\Assignment 1 - Muthukumar Kandasamy - 7723794\MKBusService\src\MKBusService\Models\RouteSchedule.cs
-D:\CAD\Ms Tech Development\Assignments\Assignment 2\Assignment 1 - Muthukumar Kandasamy - 7723794\MKBusService\src\MKBusService\Models\RouteStop.cs
-D:\CAD\Ms Tech Development\Assignments\Assignment 2\Assignment 1 - Muthukumar Kandasamy - 7723794\MKBusService\src\MKBusService\Models\Trip.cs
-D:\CAD\Ms Tech Development\Assignments\Assignment 2\Assignment 1 - Muthukumar Kandasamy - 7723794\MKBusService\src\MKBusService\Models\TripStop.cs
-D:\CAD\Ms Tech Development\Assignments\Assignment 2\Assignment 1 - Muthukumar Kandasamy - 7723794\MKBusService\src\MKBusService\Models\AccountViewModels\ExternalLoginConfirmationViewModel.cs
-D:\CAD\Ms Tech Development\Assignments\Assignment 2\Assignment 1 - Muthukumar Kandasamy - 7723794\MKBusService\src\MKBusService\Models\AccountViewModels\ForgotPasswordViewModel.cs
-D:\CAD\Ms Tech Development\Assignments\Assignment 2\Assignment 1 - Muthukumar Kandasamy - 7723794\MKBusService\src\MKBusService\Models\AccountViewModels\LoginViewModel.cs
-D:\CAD\Ms Tech Development\Assignments\Assignment 2\Assignment 1 - Muthukumar Kandasamy - 7723794\MKBusService\src\MKBusService\Models\AccountViewModels\RegisterViewModel.cs
-D:\CAD\Ms Tech Development\Assignments\Assignment 2\Assignment 1 - Muthukumar Kandasamy - 7723794\MKBusService\src\MKBusService\Models\AccountViewModels\ResetPasswordViewModel.cs
-D:\CAD\Ms Tech Development\Assignments\Assignment 2\Assignment 1 - Muthukumar Kandasamy - 7723794\MKBusService\src\MKBusService\Models\AccountViewModels\SendCodeViewModel.cs
-D:\CAD\Ms Tech Development\Assignments\Assignment 2\Assignment 1 - Muthukumar Kandasamy - 7723794\MKBusService\src\MKBusService\Models\AccountViewModels\VerifyCodeViewModel.cs
-D:\CAD\Ms Tech Development\Assignments\Assignment 2\Assignment 1 - Muthukumar Kandasamy - 7723794\MKBusService\src\MKBusService\Models\ManageViewModels\AddPhoneNumberViewModel.cs
-D:\CAD\Ms Tech Development\Assignments\Assignment 2\Assignment 1 - Muthukumar Kandasamy - 7723794\MKBusService\src\MKBusService\Models\ManageViewModels\ChangePasswordViewModel.cs
-D:\CAD\Ms Tech Development\Assignments\Assignment 2\Assignment 1 - Muthukumar Kandasamy - 7723794\MKBusService\src\MKBusService\Models\ManageViewModels\ConfigureTwoFactorViewModel.cs
-D:\CAD\Ms Tech Development\Assignments\Assignment 2\Assignment 1 - Muthukumar Kandasamy - 7723794\MKBusService\src\MKBusService\Models\ManageViewModels\FactorViewModel.cs
-D:\CAD\Ms Tech Development\Assignments\Assignment 2\Assignment 1 - Muthukumar Kandasamy - 7723794\MKBusService\src\MKBusService\Models\ManageViewModels\IndexViewModel.cs
-D:\CAD\Ms Tech Development\Assignments\Assignment 2\Assignment 1 - Muthukumar Kandasamy - 7723794\MKBusService\src\MKBusService\Models\ManageViewModels\ManageLoginsViewModel.cs
-D:\CAD\Ms Tech Development\Assignments\Assignment 2\Assignment 1 - Muthukumar Kandasamy - 7723794\MKBusService\src\MKBusService\Models\ManageViewModels\RemoveLoginViewModel.cs
-D:\CAD\Ms Tech Development\Assignments\Assignment 2\Assignment 1 - Muthukumar Kandasamy - 7723794\MKBusService\src\MKBusService\Models\ManageViewModels\SetPasswordViewModel.cs
-D:\CAD\Ms Tech Development\Assignments\Assignment 2\Assignment 1 - Muthukumar Kandasamy - 7723794\MKBusService\src\MKBusService\Models\ManageViewModels\VerifyPhoneNumberViewModel.cs
-D:\CAD\Ms Tech Development\Assignments\Assignment 2\Assignment 1 - Muthukumar Kandasamy - 7723794\MKBusService\src\MKBusService\Services\IEmailSender.cs
-D:\CAD\Ms Tech Development\Assignments\Assignment 2\Assignment 1 - Muthukumar Kandasamy - 7723794\MKBusService\src\MKBusService\Services\ISmsSender.cs
-D:\CAD\Ms Tech Development\Assignments\Assignment 2\Assignment 1 - Muthukumar Kandasamy - 7723794\MKBusService\src\MKBusService\Services\MessageServices.cs
+--reference:D:\Assignment 4 - Muthukumar Kandasamy - 7723794\src\MKClassLibrary\bin\Debug\netstandard1.6\MKClassLibrary.dll
+--resource:"D:\Assignment 4 - Muthukumar Kandasamy - 7723794\src\MKBusService\obj\Debug\netcoreapp1.0\MKBusServicedotnet-compile.deps.json",MKBusService.deps.json
+D:\Assignment 4 - Muthukumar Kandasamy - 7723794\src\MKBusService\Program.cs
+D:\Assignment 4 - Muthukumar Kandasamy - 7723794\src\MKBusService\Startup.cs
+D:\Assignment 4 - Muthukumar Kandasamy - 7723794\src\MKBusService\Controllers\AccountController.cs
+D:\Assignment 4 - Muthukumar Kandasamy - 7723794\src\MKBusService\Controllers\HomeController.cs
+D:\Assignment 4 - Muthukumar Kandasamy - 7723794\src\MKBusService\Controllers\ManageController.cs
+D:\Assignment 4 - Muthukumar Kandasamy - 7723794\src\MKBusService\Controllers\MKBusRouteController.cs
+D:\Assignment 4 - Muthukumar Kandasamy - 7723794\src\MKBusService\Controllers\MKBusStopController.cs
+D:\Assignment 4 - Muthukumar Kandasamy - 7723794\src\MKBusService\Controllers\MKCountriesController.cs
+D:\Assignment 4 - Muthukumar Kandasamy - 7723794\src\MKBusService\Controllers\MKDriversController.cs
+D:\Assignment 4 - Muthukumar Kandasamy - 7723794\src\MKBusService\Controllers\MKProvinceController.cs
+D:\Assignment 4 - Muthukumar Kandasamy - 7723794\src\MKBusService\Controllers\MKRouteScheduleController.cs
+D:\Assignment 4 - Muthukumar Kandasamy - 7723794\src\MKBusService\Controllers\MKRouteStopController.cs
+D:\Assignment 4 - Muthukumar Kandasamy - 7723794\src\MKBusService\Data\ApplicationDbContext.cs
+D:\Assignment 4 - Muthukumar Kandasamy - 7723794\src\MKBusService\Data\Migrations\00000000000000_CreateIdentitySchema.cs
+D:\Assignment 4 - Muthukumar Kandasamy - 7723794\src\MKBusService\Data\Migrations\00000000000000_CreateIdentitySchema.Designer.cs
+D:\Assignment 4 - Muthukumar Kandasamy - 7723794\src\MKBusService\Data\Migrations\ApplicationDbContextModelSnapshot.cs
+D:\Assignment 4 - Muthukumar Kandasamy - 7723794\src\MKBusService\Models\ApplicationUser.cs
+D:\Assignment 4 - Muthukumar Kandasamy - 7723794\src\MKBusService\Models\Bus.cs
+D:\Assignment 4 - Muthukumar Kandasamy - 7723794\src\MKBusService\Models\BusRoute.cs
+D:\Assignment 4 - Muthukumar Kandasamy - 7723794\src\MKBusService\Models\BusServiceContext.cs
+D:\Assignment 4 - Muthukumar Kandasamy - 7723794\src\MKBusService\Models\BusStop.cs
+D:\Assignment 4 - Muthukumar Kandasamy - 7723794\src\MKBusService\Models\Country.cs
+D:\Assignment 4 - Muthukumar Kandasamy - 7723794\src\MKBusService\Models\Driver.cs
+D:\Assignment 4 - Muthukumar Kandasamy - 7723794\src\MKBusService\Models\Province.cs
+D:\Assignment 4 - Muthukumar Kandasamy - 7723794\src\MKBusService\Models\RouteSchedule.cs
+D:\Assignment 4 - Muthukumar Kandasamy - 7723794\src\MKBusService\Models\RouteStop.cs
+D:\Assignment 4 - Muthukumar Kandasamy - 7723794\src\MKBusService\Models\Trip.cs
+D:\Assignment 4 - Muthukumar Kandasamy - 7723794\src\MKBusService\Models\TripStop.cs
+D:\Assignment 4 - Muthukumar Kandasamy - 7723794\src\MKBusService\Models\AccountViewModels\ExternalLoginConfirmationViewModel.cs
+D:\Assignment 4 - Muthukumar Kandasamy - 7723794\src\MKBusService\Models\AccountViewModels\ForgotPasswordViewModel.cs
+D:\Assignment 4 - Muthukumar Kandasamy - 7723794\src\MKBusService\Models\AccountViewModels\LoginViewModel.cs
+D:\Assignment 4 - Muthukumar Kandasamy - 7723794\src\MKBusService\Models\AccountViewModels\RegisterViewModel.cs
+D:\Assignment 4 - Muthukumar Kandasamy - 7723794\src\MKBusService\Models\AccountViewModels\ResetPasswordViewModel.cs
+D:\Assignment 4 - Muthukumar Kandasamy - 7723794\src\MKBusService\Models\AccountViewModels\SendCodeViewModel.cs
+D:\Assignment 4 - Muthukumar Kandasamy - 7723794\src\MKBusService\Models\AccountViewModels\VerifyCodeViewModel.cs
+D:\Assignment 4 - Muthukumar Kandasamy - 7723794\src\MKBusService\Models\ManageViewModels\AddPhoneNumberViewModel.cs
+D:\Assignment 4 - Muthukumar Kandasamy - 7723794\src\MKBusService\Models\ManageViewModels\ChangePasswordViewModel.cs
+D:\Assignment 4 - Muthukumar Kandasamy - 7723794\src\MKBusService\Models\ManageViewModels\ConfigureTwoFactorViewModel.cs
+D:\Assignment 4 - Muthukumar Kandasamy - 7723794\src\MKBusService\Models\ManageViewModels\FactorViewModel.cs
+D:\Assignment 4 - Muthukumar Kandasamy - 7723794\src\MKBusService\Models\ManageViewModels\IndexViewModel.cs
+D:\Assignment 4 - Muthukumar Kandasamy - 7723794\src\MKBusService\Models\ManageViewModels\ManageLoginsViewModel.cs
+D:\Assignment 4 - Muthukumar Kandasamy - 7723794\src\MKBusService\Models\ManageViewModels\RemoveLoginViewModel.cs
+D:\Assignment 4 - Muthukumar Kandasamy - 7723794\src\MKBusService\Models\ManageViewModels\SetPasswordViewModel.cs
+D:\Assignment 4 - Muthukumar Kandasamy - 7723794\src\MKBusService\Models\ManageViewModels\VerifyPhoneNumberViewModel.cs
+D:\Assignment 4 - Muthukumar Kandasamy - 7723794\src\MKBusService\Models\MetaDataClasses\DriverMetaData.cs
+D:\Assignment 4 - Muthukumar Kandasamy - 7723794\src\MKBusService\Services\IEmailSender.cs
+D:\Assignment 4 - Muthukumar Kandasamy - 7723794\src\MKBusService\Services\ISmsSender.cs
+D:\Assignment 4 - Muthukumar Kandasamy - 7723794\src\MKBusService\Services\MessageServices.cs

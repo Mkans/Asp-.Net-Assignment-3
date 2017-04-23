@@ -1,4 +1,4 @@
-﻿{
+{
   "userSecretsId": "aspnet-MKBusService-93778558-5d34-40bb-a65c-5f86e2cd4382",
 
   "dependencies": {
@@ -44,7 +44,8 @@
       "version": "1.0.0-preview2-final",
       "type": "build"
     },
-    "Microsoft.AspNetCore.Session": "1.0.0"
+    "Microsoft.AspNetCore.Session": "1.0.0",
+    "MKClassLibrary": "1.0.0-*"
   },
   "Microsoft.AspNetCore.Session": "1.0.0",
   "Microsoft.AspNetCore.Http.Extensions": "1.0.0",

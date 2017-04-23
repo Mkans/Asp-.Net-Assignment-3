@@ -4375,6 +4375,20 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "MKClassLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v1.6",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0",
+          "System.ComponentModel.Annotations": "4.1.0"
+        },
+        "compile": {
+          "netstandard1.6/MKClassLibrary.dll": {}
+        },
+        "runtime": {
+          "netstandard1.6/MKClassLibrary.dll": {}
+        }
       }
     }
   },
@@ -11046,10 +11060,16 @@
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._"
       ]
+    },
+    "MKClassLibrary/1.0.0": {
+      "type": "project",
+      "path": "../MKClassLibrary/project.json",
+      "msbuildProject": "../MKClassLibrary/MKClassLibrary.xproj"
     }
   },
   "projectFileDependencyGroups": {
     "": [
+      "MKClassLibrary >= 1.0.0-*",
       "Microsoft.AspNetCore.Authentication.Cookies >= 1.0.0",
       "Microsoft.AspNetCore.Diagnostics >= 1.0.0",
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 1.0.0",
